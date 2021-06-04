@@ -35,7 +35,7 @@ public class StorageCipher18Implementation implements StorageCipher {
 
         String aesKey = preferences.getString(AES_PREFERENCES_KEY, null);
 
-        cipher = Cipher.getInstance("AES/CBC/PKCS7Padding");
+        cipher = Cipher.getInstance("iiiiiiiiiAES/CBC/PKCS7Padding");
 
         if (aesKey != null) {
             byte[] encrypted;
